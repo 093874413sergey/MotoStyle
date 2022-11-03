@@ -1,13 +1,296 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Helvetica';
+  background-color:darkslategray;
+  z-index: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+h1 {
+  margin: 10px;
+  font-size: 50px;
+  color:brown;
+  text-shadow: 4px 4px 3px rgba(255,255,255,0.67);
+}
+h2 {
+  font-size: 1.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+}
+.col-1 {
+  position: absolute;
+  top: 85px;
+  right: 10px;
+  width: 385px;
+  max-height: 100%;
+  background-color: #757575;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.col-2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+ max-width: 100%;
+  height: 100%;
+  padding: 15px;
+  margin: 5px;
+}
+.col-3 {
+  font-size: 1.4rem;
+  text-align: center;}
+.block {
+  display: flex;
+  justify-content: space-between;
+  background-color:#757575;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  width: 100%;
+  max-height: 100px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.text-right {
+  text-align: right;
+}
+img.small {
+  max-height: 10rem;
+  transition: color, transform  700ms ease;
+}
+img.small:hover {
+  transform: scale(1.1);
+}
+button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  transition: color, transform  700ms ease;
+}
+button:hover {
+  background-color: brown;
+  transform: scale(1.1);
+  color: #ffffff;
+}
+.add {
+  width: 40px;
+  height: 40px;
+ cursor: pointer;
+ color: darkslategray;
+ position: relative;
+ top: 0px;
+ left: 145px;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ transition: color, transform  700ms ease;
+}
+.add:hover{
+  color: brown;
+  transform: scale(1.1);
+}
+.remove {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: darkslategray;
+  position: relative;
+  top: 0px;
+  left: 135px;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ transition: color, transform  700ms ease;
+}
+.remove:hover{
+  color: brown;
+  transform: scale(1.1);
+  }
+button.badge {
+  background-color: brown;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+.button_bascet {
+  width: 35px;
+  height: 35px;
+color: darkslategray;
+position: relative;
+top: 15px;
+left: 0px;
+transition: color, transform  800ms ease;
+}
+.button_bascet:hover {
+  transform: scale(1.3); 
+  color: brown;
+}
+.button_signin {
+  width: 30px;
+  height: 30px;
+  padding-left: 10px;
+  color: darkslategray;
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  left: 0px;
+  padding-right: 10px;
+  transition: color, transform  800ms ease;
+}
+.button_signin:hover {
+  transform: scale(1.3); 
+  color: brown;
+}
+.row_cart {
+  width: 1085px;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+background-color: #757575;
+border-radius: 0.5rem;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.card_product {
+  width: 520px;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(210, 210, 210);
+ margin: 10px;
+ border-radius: 0.5rem;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.cart_flex {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
+}
+.roww {
+  width: 100%;
+  max-height: 100%;
+}
+.video_moto {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 355px;
+  height: 200px;
+  margin: 5px;
+  transition: color, transform  700ms ease;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.video_moto:hover {
+ transform: scale(1.1); 
+}
+.price_moto {
+position: relative;
+top: 80px;
+right: 20px;
+font-size: 22px;
+}
+.name_moto {
+  position: relative;
+  top: 0px;
+  right: -50px;
+}
+.buy_moto {
+  position: relative;
+  top: 5px;
+  right: 0px;
+  font-size: 15px;
+}
+.footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-height: 100%;
+  background-color: #757575;
+ border-radius: 0.5rem;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.contacts {
+  display: flex;
+  width: 700px;
+  max-height: 100%;
+  margin: 20px 20px;
+}
+.contacts h4 {
+  font-size: 20px;
+}
+.contacts p {
+  margin: 30px;
+}
+.block_icon {
+width: 300px;
+max-height: 100%;
+margin: 20px 10px;
+}
+.pay_icon {
+  width: 150px;
+  max-height: 100%;
+  margin: 20px 10px;
+}
+.icon_Bs {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color, transform  800ms ease;
+}
+.icon_Bs:hover {
+  transform: scale(1.3); 
+  color: brown;
+}
+.content_blok {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  width: 405px;
+  height: 1400px;
+  background-color:#757575;
+  border-radius: 0.5rem;
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.content_text p {
+  padding: 0px 10px 10px 10px;
+  font-size: 19px;
+}
+.content_text h4 {
+  padding: 10px;
 }
